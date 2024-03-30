@@ -3,7 +3,7 @@ const Blog = () => {
     <>
       <section id='blog' className='mb-24 bg-[#09101A] px-8 py-10 rounded-lg'>
         <div className='text-center'>
-          <h3 className='color-primary text-2xl mb-3'>MY Blog</h3>
+          <h3 className='color-primary text-2xl mb-3'>My Blog</h3>
           <h2 className='text-3xl lg:text-5xl text-left text-white font-bold leading-snug max-w-[790px] mx-auto'>
             Rafting Unique Experiences Inspiring Connections
           </h2>
@@ -18,7 +18,7 @@ const Blog = () => {
                 src='./assets/computer.jpg'
                 alt=''
               />
-              <p className='publish absolute top-5 right-4 text-white bg-emerald-600 px-3 py-2 rounded-lg'>
+              <p className='publish absolute top-5 right-4 text-white bg-emerald-600 px-2 py-1 rounded-lg'>
                 10 Jan
               </p>
             </div>
@@ -41,7 +41,7 @@ const Blog = () => {
                 src='./assets/occupation.jpg'
                 alt=''
               />
-              <p className='publish absolute top-5 right-4 text-white bg-emerald-600 px-3 py-2 rounded-lg'>
+              <p className='publish absolute top-5 right-4 text-white bg-emerald-600 px-2 py-1 rounded-lg'>
                 10 Jan
               </p>
             </div>
@@ -64,7 +64,7 @@ const Blog = () => {
                 src='./assets/5C.jpg'
                 alt=''
               />
-              <p className='publish absolute top-5 right-4 text-white bg-emerald-600 px-3 py-2 rounded-lg'>
+              <p className='publish absolute top-5 right-4 text-white bg-emerald-600 px-2 py-1 rounded-lg'>
                 10 Jan
               </p>
             </div>

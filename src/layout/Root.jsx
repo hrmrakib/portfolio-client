@@ -16,7 +16,7 @@ const Root = () => {
   useEffect(() => {
     const path = location.hash.substring(1);
     const title = path.charAt(0).toUpperCase() + path.slice(1);
-    document.title = `Rakibul | ${title}`;
+    document.title = `Rakibul | ${title || "Home"} View`;
   }, [location.hash]);
   return (
     <div>

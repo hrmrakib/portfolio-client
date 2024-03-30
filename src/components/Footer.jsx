@@ -6,11 +6,11 @@ const Footer = () => {
     <footer className='p-4 lg:p-12 sm:ml-64 bg-[#02050A] text-[#a2a2a2]'>
       <form
         action=''
-        className='flex flex-col gap-5 *:border *:py-3 *:px-2 *:bg-transparent *:rounded'
+        className='flex flex-col gap-5 *:border *:border-purple-900 *:text-gray-200 *:py-3 *:px-2 *:bg-transparent *:rounded'
       >
-        <input className='' type='text' placeholder='Your Name' />
-        <input className='' type='email' placeholder='Your Email' />
-        <input className='' type='text' placeholder='Subject' />
+        <input type='text' placeholder='Your Name' />
+        <input type='email' placeholder='Your Email' />
+        <input type='text' placeholder='Subject' />
         <textarea
           className='h-24 md:h-auto p-3 text-white'
           placeholder='Your Message'

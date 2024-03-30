@@ -26,9 +26,7 @@ const Portfolio = () => {
         <PortfolioCard />
         <PortfolioCard />
         <PortfolioCard />
-        <PortfolioCard />
-        <PortfolioCard />
-        <PortfolioCard />
+
         {/* <div className='card max-w-80 bg-white p-4 rounded-xl'>
           <div className='relative'>
             <img
