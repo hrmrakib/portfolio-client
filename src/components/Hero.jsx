@@ -11,7 +11,7 @@ const Hero = () => {
         className='hero_area sm:ml-64  bg-[#02050A] text-[#a2a2a2] h-screen'
       >
         <div className='layer grid grid-cols-1 lg:grid-cols-3 items-center p-4 lg:p-20'>
-          <div className='hero_left col-span-2 '>
+          <div className='hero_left col-span-2'>
             <h2 className='text-4xl lg:text-6xl lg:pt-8 text-white font-extrabold lg:leading-tight'>
               HI, I'M Rakib!
               <br />
@@ -20,12 +20,11 @@ const Hero = () => {
             <h2 className='dynamic text-green-500 text-3xl font-bold lg:text-4xl mb-5 md:mb-8'>
               Frontend Developer
             </h2>
-            <p className='my-p leading-6 mb-6'>
-              I'm a passionate UI/UX designer with a mission to create
-              delightful and intuitive digital experiences. With a strong
-              foundation in design principles and a keen eye for detail, I
-              specialize in translating complex ideas into user-friendly
-              interfaces that captivate and engage.
+            <p className='my-p leading-6 mb-6 text-gray-100'>
+              With a fervent dedication to modern front-end technologies, I
+              aspire to utilize my technical prowess and leadership acumen to
+              propel success in dynamic tech projects, seeking an environment to
+              apply my expertise and further excel in the Web Development field.
             </p>
             <button
               onClick={handleDownload}

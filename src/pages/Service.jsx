@@ -19,25 +19,6 @@ const Service = () => {
               <GoDotFill className='text-green-600 text-sm' />
             </div>
             <img
-              className='w-20 h-20 absolute -top-12'
-              src='./assets/app-development.png'
-              alt=''
-            />
-            <h2 className='text-xl text-white mb-3 mt-10'>
-              Website Development
-            </h2>
-            <p className='my-p'>
-              Crafting innovative websites with user-centric design, enhancing
-              digital experiences through creativity and technical expertise.
-            </p>
-          </div>
-          <div className='bg-[#09101A] p-6 relative rounded-lg transition duration-200 delay-100 hover:-translate-y-12'>
-            <div className='absolute flex top-5 right-5 *:text-3xl'>
-              <GoDotFill className='text-red-600 text-sm' />
-              <GoDotFill className='text-yellow-600 text-sm' />
-              <GoDotFill className='text-green-600 text-sm' />
-            </div>
-            <img
               className='w-20 h-20 absolute -top-12 rounded-xl'
               src='./assets/programming-b.jpg'
               alt=''
@@ -69,6 +50,26 @@ const Service = () => {
               Crafting dynamic, high-performance React applications with clean
               code, intuitive design, and seamless user experiences for diverse
               audiences.
+            </p>
+          </div>
+
+          <div className='bg-[#09101A] p-6 relative rounded-lg transition duration-200 delay-100 hover:-translate-y-12'>
+            <div className='absolute flex top-5 right-5 *:text-3xl'>
+              <GoDotFill className='text-red-600 text-sm' />
+              <GoDotFill className='text-yellow-600 text-sm' />
+              <GoDotFill className='text-green-600 text-sm' />
+            </div>
+            <img
+              className='w-20 h-20 absolute -top-12'
+              src='./assets/app-development.png'
+              alt=''
+            />
+            <h2 className='text-xl text-white mb-3 mt-10'>
+              Full-Stack Development
+            </h2>
+            <p className='my-p'>
+              Building robust, scalable web applications with seamless frontend
+              and backend integration.
             </p>
           </div>
         </div>

@@ -50,10 +50,10 @@ const About = () => {
               </p>
               <div className='mt-3 border-l-2 border-x-green-600'>
                 <p className='my-p ml-2'>
-                  Studies at National University of Bangladesh
+                  Studid at National University of Bangladesh
                 </p>
                 <p className='my-p ml-2'>Subject: Management</p>
-                <p className='my-p ml-2'>Running: 3rd Years</p>
+                {/* <p className='my-p ml-2'>Running: 3rd Years</p> */}
               </div>
             </div>
 
