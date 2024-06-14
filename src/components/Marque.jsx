@@ -13,7 +13,8 @@ const Marque = () => {
         <span className='mr-4 ml-4'>Firebase</span> ||
         <span className='mr-4 ml-4'>Node</span> ||
         <span className='mr-4 ml-4'>Express</span> ||
-        <span className='mr-4 ml-4'>MongoDB</span>
+        <span className='mr-4 ml-4'>MongoDB</span> ||
+        <span className='mr-4 ml-4'>Mongoose</span>
       </marquee>
     </section>
   );

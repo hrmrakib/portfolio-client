@@ -37,7 +37,7 @@ const Skill = () => {
           type='button'
           className='text-white bg-[#141C27] hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg  dark:shadow-lg  font-medium rounded-lg text-[18px] px-5 py-2.5 text-center me-2 mb-2'
         >
-          Experience
+          Technologies
         </button>
         <button
           onClick={() => handleSkill("education")}
@@ -163,12 +163,6 @@ const Skill = () => {
       {/* <!-- experience and tech --> */}
       {tract === "experience" && (
         <div>
-          <h2 className='mb-5 text-center'>
-            I have not joined any job till now. May be my first job in your
-            company. Or maybe another company. But I am fully prepared for the
-            job.
-          </h2>
-
           <h3 className='text-xl text-slate-200 text-center'>
             Which Technologies is My Hands On
           </h3>

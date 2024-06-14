@@ -4,7 +4,7 @@ const Blog = () => {
       <section id='blog' className='mb-24 bg-[#09101A] px-8 py-10 rounded-lg'>
         <div className='text-center'>
           <h3 className='color-primary text-2xl mb-3'>My Blog</h3>
-          <h2 className='text-3xl lg:text-5xl text-left text-white font-bold leading-snug max-w-[790px] mx-auto'>
+          <h2 className='text-3xl lg:text-5xl text-center text-white font-bold leading-snug max-w-[790px] mx-auto'>
             Rafting Unique Experiences Inspiring Connections
           </h2>
         </div>
