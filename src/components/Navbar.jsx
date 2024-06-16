@@ -13,13 +13,8 @@ import { BiSolidContact } from "react-icons/bi";
 import { useState } from "react";
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
-
   return (
     <div className='relative'>
-      <button className='md:hidden text-3xl p-4 text-white absolute top-2'>
-        ☰
-      </button>
       <nav className='hidden lg:block'>
         <aside
           id='logo-sidebar'
@@ -27,7 +22,7 @@ const Navbar = () => {
           // className='fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0'
           aria-label='Sidebar'
         >
-          <div className='h-full px-3 py-4 overflow-y-auto bg-[#09101aca]'>
+          <div className='h-full px-3 py-4 overflow-y-auto bg-[#09101A]'>
             <Link to='/' className='flex items-center justify-center mb-10'>
               <img
                 src='./assets/js.png'

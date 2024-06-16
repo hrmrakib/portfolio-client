@@ -118,6 +118,7 @@ main {
 .live-link a.social {
   width: 35px;
   height: 35px;
+  background: rgb(215, 215, 215);
 }
 .live-link a:hover {
   box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
@@ -155,7 +156,7 @@ main {
   background-color: #0077b5;
 }
 .live-link a[data-link="facebook"] .filled {
-  background-color: rgb(123, 43, 203);
+  background-color: rgb(47, 118, 239);
 }
 .live-link a[data-link="github"] .filled {
   background-color: chocolate;

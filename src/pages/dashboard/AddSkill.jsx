@@ -66,8 +66,8 @@ const AddSkill = () => {
   };
 
   return (
-    <div className='max-w-20xl mt-5 mx-auto p-2 md:p-6 bg-white dark:bg-gray-900 border rounded-lg shadow-md'>
-      <h2 className='text-2xl text-center font-bold mb-4 dark:text-gray-100 border-b dark:border-gray-600 pb-6'>
+    <div className='max-w-20xl mt-5 mx-auto p-2 md:p-6 bg-white border rounded-lg shadow-md'>
+      <h2 className='text-2xl text-center font-bold mb-4 border-b pb-6'>
         Add a Pet
       </h2>
       <form
@@ -75,33 +75,27 @@ const AddSkill = () => {
         onSubmit={handleSubmit(onSubmit)}
       >
         <div>
-          <label
-            htmlFor='image'
-            className='block text-gray-700 dark:text-gray-100'
-          >
+          <label htmlFor='image' className='block text-gray-700'>
             Image
           </label>
           <input
             type='file'
             {...register("image", { required: true })}
-            className='mt-2 dark:bg-gray-900'
+            className='mt-2'
           />
           {errors.image && (
             <span className='text-red-600 font-medium'>Image is required</span>
           )}
         </div>
         <div>
-          <label
-            htmlFor='name'
-            className='block text-gray-700 dark:text-gray-100'
-          >
+          <label htmlFor='name' className='block text-gray-700'>
             Name
           </label>
           <input
             name='name'
             type='text'
             {...register("name", { required: true })}
-            className='mt-2 p-2 w-full border rounded dark:bg-gray-900 dark:text-gray-100'
+            className='mt-2 p-2 w-full border rounded'
           />
           {errors.name && (
             <span className='text-red-600 font-medium'>Name is required</span>

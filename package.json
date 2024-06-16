@@ -11,12 +11,15 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
+    "@tanstack/react-query": "^5.45.0",
     "axios": "^1.7.2",
+    "date-and-time": "^3.3.0",
     "firebase": "^10.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.51.5",
     "react-icons": "^5.0.1",
+    "react-modal": "^3.16.1",
     "react-router-dom": "^6.22.3",
     "react-router-hash-link": "^2.4.3",
     "sweetalert2": "^11.11.1"

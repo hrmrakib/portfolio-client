@@ -46,9 +46,9 @@ const Dashboard = () => {
   const isAdmin = true;
   const user = true;
 
-  // const handleLogOut = async () => {
-  //   await logOut();
-  // };
+  const handleLogOut = async () => {
+    await logOut();
+  };
 
   return (
     <div className='flex h-screen bg-gray-100 '>
@@ -57,7 +57,7 @@ const Dashboard = () => {
         <div className='p-6 text-center text-xl font-bold '>
           <Link to='/' className='flex items-center justify-center'>
             <img
-              src='./assets/js.png'
+              src='/assets/js.png'
               className='h-6 me-3 sm:h-7'
               alt='Developer'
             />

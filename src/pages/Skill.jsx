@@ -3,12 +3,11 @@ import handleDownload from "../utils/handleDownload";
 import { useState } from "react";
 
 const Skill = () => {
-  const [tract, setTract] = useState("experience");
+  const [tract, setTract] = useState("technologies");
 
   const handleSkill = (view) => {
     setTract(view);
   };
-  console.log(typeof tract);
 
   return (
     <section
@@ -28,28 +27,37 @@ const Skill = () => {
         <button
           onClick={handleDownload}
           type='button'
-          className='text-white flex items-center gap-2 bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-[18px] px-5 py-2.5 text-center me-2 mb-2'
+          className='text-white flex items-center gap-2 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-[18px] px-5 py-2.5 text-center me-2 mb-2'
+          // className='flex items-center gap-1 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-lg px-5 py-2 text-center'
         >
           <span>Download CV</span> <MdCloudDownload className='text-xl' />
         </button>
+
         <button
-          onClick={() => handleSkill("experience")}
+          onClick={() => handleSkill("technologies")}
           type='button'
-          className='text-white bg-[#141C27] hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg  dark:shadow-lg  font-medium rounded-lg text-[18px] px-5 py-2.5 text-center me-2 mb-2'
+          className={`text-white ${
+            tract === "technologies" ? "bg-green-500" : "bg-gray-800"
+          } hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg  dark:shadow-lg  font-medium rounded-lg text-[18px] px-5 py-2.5 text-center me-2 mb-2`}
         >
           Technologies
         </button>
+
         <button
           onClick={() => handleSkill("education")}
           type='button'
-          className='text-white bg-[#141C27] hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg  dark:shadow-lg  font-medium rounded-lg text-[18px] px-5 py-2.5 text-center me-2 mb-2'
+          className={`text-white ${
+            tract === "education" ? "bg-green-500" : "bg-gray-800"
+          } hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg  dark:shadow-lg  font-medium rounded-lg text-[18px] px-5 py-2.5 text-center me-2 mb-2`}
         >
           Education
         </button>
         <button
           onClick={() => handleSkill("biography")}
           type='button'
-          className='text-white bg-[#141C27] hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg  dark:shadow-lg  font-medium rounded-lg text-[18px] px-5 py-2.5 text-center me-2 mb-2'
+          className={`text-white ${
+            tract === "biography" ? "bg-green-500" : "bg-gray-800"
+          } hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg  dark:shadow-lg  font-medium rounded-lg text-[18px] px-5 py-2.5 text-center me-2 mb-2`}
         >
           Biography
         </button>
@@ -58,11 +66,11 @@ const Skill = () => {
       {/* <!-- education content --> */}
       {tract === "education" && (
         <div className='grid grid-cols-1 md:grid-cols-2 gap-7'>
-          <div className='border p-5 rounded-lg'>
+          <div className='border border-gray-600 p-5 rounded-lg'>
             <h3>
               <span className='color-primary text-2xl'> &gt;&gt; </span>
               <span className='text-2xl text-white border-b-2 border-[#55e6a5]'>
-                MBA
+                BBA
               </span>
             </h3>
             <div className='py-6 px-7'>
@@ -71,13 +79,12 @@ const Skill = () => {
               </h2>
               <h4 className='text-xl text-white mb-2'>2021 - 2025</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing
-                elitconsectetur adipisicing elit. Facilis quasi necessitatibus
-                repellendus?
+                <strong>Subject:</strong> Management
               </p>
+              <strong>University:</strong> National University
             </div>
           </div>
-          <div className='border p-5 rounded-lg'>
+          <div className='border border-gray-600 p-5 rounded-lg'>
             <h3>
               <span className='color-primary text-2xl'> &gt;&gt; </span>
               <span className='text-2xl text-white border-b-2 border-[#55e6a5]'>
@@ -85,16 +92,17 @@ const Skill = () => {
               </span>
             </h3>
             <div className='py-6 px-7'>
-              <h2 className='text-2xl text-white mb-1'>Dhaka Board</h2>
+              <h2 className='text-2xl text-white mb-1'>
+                Dhaka Board of Bangladesh
+              </h2>
               <h4 className='text-xl text-white mb-2'>2018 - 2020</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing
-                elitconsectetur adipisicing elit. Facilis quasi necessitatibus
-                repellendus?
+                <strong>Subject:</strong> Business Studies
               </p>
+              <strong>College:</strong> Gazipur Commerce College
             </div>
           </div>
-          <div className='border p-5 rounded-lg'>
+          <div className='border border-gray-600 p-5 rounded-lg'>
             <h3>
               <span className='color-primary text-2xl'> &gt;&gt; </span>
               <span className='text-2xl text-white border-b-2 border-[#55e6a5]'>
@@ -102,16 +110,17 @@ const Skill = () => {
               </span>
             </h3>
             <div className='py-6 px-7'>
-              <h2 className='text-2xl text-white mb-1'>Dhaka Board</h2>
+              <h2 className='text-2xl text-white mb-1'>
+                Dhaka Board of Bangladesh
+              </h2>
               <h4 className='text-xl text-white mb-2'>2018</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing
-                elitconsectetur adipisicing elit. Facilis quasi necessitatibus
-                repellendus?
+                <strong>Subject:</strong> Business Studies
               </p>
+              <strong>School:</strong> Kawaltia Zahir Uddin High School
             </div>
           </div>
-          <div className='border p-5 rounded-lg'>
+          <div className='border border-gray-600 p-5 rounded-lg'>
             <h3>
               <span className='color-primary text-2xl'> &gt; &gt; </span>
               <span className='text-2xl text-white border-b-2 border-[#55e6a5]'>
@@ -119,13 +128,14 @@ const Skill = () => {
               </span>
             </h3>
             <div className='py-6 px-7'>
-              <h2 className='text-2xl text-white mb-1'>Dhaka Board</h2>
+              <h2 className='text-2xl text-white mb-1'>
+                Dhaka Board of Bangladesh
+              </h2>
               <h4 className='text-xl text-white mb-2'>2015</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing
-                elitconsectetur adipisicing elit. Facilis quasi necessitatibus
-                repellendus?
+                <strong>Subject:</strong> General Studies
               </p>
+              <strong>School:</strong> Kawaltia Zahir Uddin High School
             </div>
           </div>
         </div>
@@ -135,33 +145,18 @@ const Skill = () => {
       {tract === "biography" && (
         <div>
           <div>
-            <h2 className='text-white text-2xl font-medium mb-2'>
-              Briefly Describe My Biography
-            </h2>
-            <p>
-              <span className='text-slate-200 mb-1'>Assalamualikum,</span>{" "}
-              <br /> I am Rakibul, born and grow at Gazipur in Bangladesh. I am
-              starting my education life in my family and enroll a kindergarten
-              school(2008). After 2 years, I enroll a govt primary school in my
-              village and passed primary level in 2012. I study 5 years a medium
-              school in my village and passed out here in 2018. I admit a modern
-              and higher studied college in main city area and invest 2 years
-              with dedication and hard working, and passed it here 2020. Then, I
-              admit a university for higher study in the subject of Management
-              and running now.
-            </p>
-            <p className='mt-3'>
-              I am a practicing muslim, follow basic rules of my religious. I
-              woke up everyday early in the morning for praying. I am very
-              careful about my work. I keep my promise. I am honest in work and
-              stay away from lies.
-            </p>
+            <img
+              className='w-20 md:w-36 profile'
+              src='./assets/rakib.png'
+              alt=''
+            />
+            <div></div>
           </div>
         </div>
       )}
 
       {/* <!-- experience and tech --> */}
-      {tract === "experience" && (
+      {tract === "technologies" && (
         <div>
           <h3 className='text-xl text-slate-200 text-center'>
             Which Technologies is My Hands On
@@ -170,7 +165,7 @@ const Skill = () => {
             <div className='flex flex-col justify-center parent p-2'>
               <div className='w-24 h-24 rounded-full bg-[#2F3046] mb-2 child'>
                 <img
-                  className='w-full p-4'
+                  className='w-full p-4 rounded-badge'
                   src='./assets/tech/html.png'
                   alt=''
                 />
@@ -276,6 +271,36 @@ const Skill = () => {
                 />
               </div>
               <span className='text-center text-white'>NodeJS</span>
+            </div>
+            <div className='flex flex-col justify-center parent p-2'>
+              <div className='w-24 h-24 rounded-full bg-[#2F3046] mb-2 child'>
+                <img
+                  className='w-full p-4'
+                  src='./assets/tech/express.png'
+                  alt=''
+                />
+              </div>
+              <span className='text-center text-white'>Expressjs</span>
+            </div>
+            <div className='flex flex-col justify-center parent p-2'>
+              <div className='w-24 h-24 rounded-full bg-[#2F3046] mb-2 child'>
+                <img
+                  className='w-full p-4'
+                  src='./assets/tech/mongodb.png'
+                  alt=''
+                />
+              </div>
+              <span className='text-center text-white'>MongoDB</span>
+            </div>
+            <div className='flex flex-col justify-center parent p-2'>
+              <div className='w-24 h-24 rounded-full bg-[#2F3046] mb-2 child'>
+                <img
+                  className='w-full p-4 rounded-badge'
+                  src='./assets/tech/mongoose.png'
+                  alt=''
+                />
+              </div>
+              <span className='text-center text-white'>Mongoose</span>
             </div>
           </div>
         </div>

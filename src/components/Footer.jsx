@@ -3,52 +3,38 @@ import { FaFacebook, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className='p-4 lg:p-12 sm:ml-64 bg-[#02050A] text-[#a2a2a2]'>
-      <form
-        action=''
-        className='flex flex-col gap-5 *:border *:border-purple-900 *:text-gray-200 *:py-3 *:px-2 *:bg-transparent *:rounded'
-      >
-        <input type='text' placeholder='Your Name' />
-        <input type='email' placeholder='Your Email' />
-        <input type='text' placeholder='Subject' />
-        <textarea
-          className='h-24 md:h-auto p-3 text-white'
-          placeholder='Your Message'
-          name=''
-          id=''
-          cols='30'
-          rows='8'
-        ></textarea>
-      </form>
-      <div className='flex justify-center my-8'>
-        <button
-          className='bg-green-600 text-white w-full md:max-w-max px-6 py-3 rounded-md'
-          type='button'
-        >
-          Submit
-        </button>
+    <footer className='px-4 lg:p-12 sm:ml-64 bg-[#02050A] text-[#a2a2a2]'>
+      <div className='border-t border-gray-700 w-[100%] mx-auto'></div>
+      <div className='pt-12 flex items-center justify-between'>
+        <p className='copyright'>&copy; Rakibul 2024 | All Rights Reserved</p>
+
+        <div className='live-link flex justify-center gap-3 *:text-xl *:border-none'>
+          <a
+            className='social'
+            href='https://www.linkedin.com/in/hrmrakib/'
+            data-link='linkedin'
+          >
+            <span className='filled filled2'></span>
+            <FaLinkedin className='text-xl text-black z-50 icon' />
+          </a>
+          <a
+            className='social'
+            href='https://www.facebook.com/hrmrakib'
+            data-link='facebook'
+          >
+            <span className='filled filled2'></span>
+            <FaFacebook className='text-xl text-black z-50 icon' />
+          </a>
+          <a
+            className='social'
+            href='https://github.com/hrmrakib'
+            data-link='github'
+          >
+            <span className='filled filled2'></span>
+            <FaGithub className='text-xl text-black z-50 icon' />
+          </a>
+        </div>
       </div>
-
-      <div className='border-b-[1px] border-gray-600 my-12'></div>
-
-      <div className='live-link flex justify-center gap-3 *:text-xl *:border-none'>
-        <a className='social' href='#' data-link='linkedin'>
-          <span className='filled filled2'></span>
-          <FaLinkedin className='text-xl text-black z-50 icon' />
-        </a>
-        <a className='social' href='#' data-link='facebook'>
-          <span className='filled filled2'></span>
-          <FaFacebook className='text-xl text-black z-50 icon' />
-        </a>
-        <a className='social' href='#' data-link='github'>
-          <span className='filled filled2'></span>
-          <FaGithub className='text-xl text-black z-50 icon' />
-        </a>
-      </div>
-
-      <p className='copyright mt-10'>
-        &copy; Rakibul 2024 | All Rights Reserved
-      </p>
     </footer>
   );
 };
