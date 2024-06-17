@@ -63,6 +63,7 @@ const Portfolio = () => {
                     href={project?.liveLink}
                     aria-label='Spotify'
                     data-link='live'
+                    target='_blank'
                   >
                     <div className='filled'></div>
                     <FaEye className='text-2xl text-black z-50 icon' />
