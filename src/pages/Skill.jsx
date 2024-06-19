@@ -1,6 +1,7 @@
 import { MdCloudDownload } from "react-icons/md";
 import handleDownload from "../utils/handleDownload";
 import { useState } from "react";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Skill = () => {
   const [tract, setTract] = useState("technologies");
@@ -143,14 +144,55 @@ const Skill = () => {
 
       {/* <!-- biography  --> */}
       {tract === "biography" && (
-        <div>
-          <div>
-            <img
-              className='w-20 md:w-36 profile'
-              src='./assets/rakib.png'
-              alt=''
-            />
-            <div></div>
+        <div className='bg- p-8 rounded-lg shadow-lg max-w-4xl mx-auto my-10'>
+          <div className='flex flex-col md:flex-row items-center'>
+            <div className='md:w-1/3 w-full flex justify-center md:justify-start mb-6 md:mb-0'>
+              <img
+                src='https://i.ibb.co/w7Jx7Bj/frontend-developer-rakibul.jpg'
+                alt='Profile'
+                className='rounded-full w-48 h-48 object-cover'
+              />
+            </div>
+            <div className='md:w-2/3 w-full md:pl-8'>
+              <h2 className='text-4xl font-bold mb-4'>Md Rakibul Alam</h2>
+              <p className='text-gray-300 mb-4'>
+                Hello! I'm Rakibul, a passionate web developer with a love for
+                creating beautiful and functional web applications. I have
+                developed a strong foundation in modern web technologies. I
+                enjoy working on innovative projects and constantly strive to
+                improve my skills and learn new technologies.
+              </p>
+              <p className='text-gray-400 mb-4'>
+                In my free time, I like to explore new tech trends, contribute
+                to open-source projects, and enjoy outdoor activities.
+              </p>
+              <div className='live-link flex gap-3 *:text-xl *:border-none'>
+                <a
+                  className='social'
+                  href='https://www.linkedin.com/in/hrmrakib/'
+                  data-link='linkedin'
+                >
+                  <span className='filled filled2'></span>
+                  <FaLinkedin className='text-xl text-black z-50 icon' />
+                </a>
+                <a
+                  className='social'
+                  href='https://www.facebook.com/hrmrakib'
+                  data-link='facebook'
+                >
+                  <span className='filled filled2'></span>
+                  <FaFacebook className='text-xl text-black z-50 icon' />
+                </a>
+                <a
+                  className='social'
+                  href='https://github.com/hrmrakib'
+                  data-link='github'
+                >
+                  <span className='filled filled2'></span>
+                  <FaGithub className='text-xl text-black z-50 icon' />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       )}
