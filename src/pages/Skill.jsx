@@ -150,7 +150,7 @@ const Skill = () => {
               <img
                 src='https://i.ibb.co/w7Jx7Bj/frontend-developer-rakibul.jpg'
                 alt='Profile'
-                className='rounded-full w-48 h-48 object-cover'
+                className='rounded-full w-48 h-48 object-cover profile'
               />
             </div>
             <div className='md:w-2/3 w-full md:pl-8'>
