@@ -1,5 +1,5 @@
 const handleDownload = () => {
-  const pdfUrl = "frontend-developer-rakibul.pdf";
+  const pdfUrl = "frontend-react-developer-rakibul.pdf";
 
   const link = document.createElement("a");
   link.href = pdfUrl;
