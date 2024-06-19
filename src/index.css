@@ -15,7 +15,8 @@
   line-height: 28px;
 }
 .hero_area {
-  background: url("/assets/programming-background-collage.jpg") no-repeat;
+  background: url("https://i.ibb.co/VLdtdK6/programming-background-collage.jpg")
+    no-repeat;
   background-position: right bottom;
   background-size: 100% 100%;
   position: relative;
@@ -68,7 +69,7 @@
 }
 .about-bg {
   background: linear-gradient(80deg, #070211ca 0%, rgba(7, 2, 17, 0) 100%),
-    url("/assets/programmer.jpg") no-repeat;
+    url("https://i.ibb.co/vhbBB3Z/programmer.jpg") no-repeat;
   background-position: right bottom;
   background-size: 100% 100%;
 }
