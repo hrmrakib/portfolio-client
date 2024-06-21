@@ -20,7 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/blogDetail/:id",
     element: <BlogDetail />,
-    loader: async ({ params }) => await fetch(`${baseURL}/blog/${params.id}`),
+    loader: async ({ params }) =>
+      await fetch(
+        `https://portfolio-server-two-delta.vercel.app/blog/${params.id}`
+      ),
   },
   {
     path: "/dashboard",
