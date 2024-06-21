@@ -23,12 +23,12 @@ const Skill = () => {
       </div>
       <div
         id='experience'
-        className='flex flex-wrap gap-5 justify-center my-12'
+        className='flex flex-col md:flex-row gap-5 justify-center my-12'
       >
         <button
           onClick={handleDownload}
           type='button'
-          className='text-white flex items-center gap-2 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-[18px] px-5 py-2.5 text-center me-2 mb-2'
+          className='text-white flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-[18px] px-5 py-2.5 text-center me-2 mb-2'
           // className='flex items-center gap-1 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-lg px-5 py-2 text-center'
         >
           <span>Download CV</span> <MdCloudDownload className='text-xl' />
@@ -123,7 +123,7 @@ const Skill = () => {
           </div>
           <div className='border border-gray-600 p-5 rounded-lg'>
             <h3>
-              <span className='color-primary text-2xl'> &gt; &gt; </span>
+              <span className='color-primary text-2xl'> &gt;&gt; </span>
               <span className='text-2xl text-white border-b-2 border-[#55e6a5]'>
                 JSC
               </span>
@@ -150,11 +150,13 @@ const Skill = () => {
               <img
                 src='https://i.ibb.co/w7Jx7Bj/frontend-developer-rakibul.jpg'
                 alt='Profile'
-                className='rounded-full w-48 h-48 object-cover profile'
+                className='rounded-full size-36 md:size-48 object-cover profile'
               />
             </div>
             <div className='md:w-2/3 w-full md:pl-8'>
-              <h2 className='text-4xl font-bold mb-4'>Md Rakibul Alam</h2>
+              <h2 className='text-2xl lg:text-4xl font-bold mb-4'>
+                Md Rakibul Alam
+              </h2>
               <p className='text-gray-300 mb-4'>
                 Hello! I'm Rakibul, a passionate web developer with a love for
                 creating beautiful and functional web applications. I have
@@ -205,7 +207,7 @@ const Skill = () => {
           </h3>
           <div className='flex flex-wrap justify-center gap-5 my-8'>
             <div className='flex flex-col justify-center parent p-2'>
-              <div className='w-24 h-24 rounded-full bg-[#2F3046] mb-2 child'>
+              <div className='size-20 md:size-24 rounded-full bg-[#2F3046] mb-2 child'>
                 <img
                   className='w-full p-4 rounded-badge'
                   src='./assets/tech/html.png'
@@ -215,7 +217,7 @@ const Skill = () => {
               <span className='text-center text-white'>HTML</span>
             </div>
             <div className='flex flex-col justify-center parent p-2'>
-              <div className='w-24 h-24 rounded-full bg-[#2F3046] mb-2 child'>
+              <div className='size-20 md:size-24 rounded-full bg-[#2F3046] mb-2 child'>
                 <img
                   className='w-full p-4'
                   src='./assets/tech/css.png'
@@ -225,7 +227,7 @@ const Skill = () => {
               <span className='text-center text-white'>CSS</span>
             </div>
             <div className='flex flex-col justify-center parent p-2'>
-              <div className='w-24 h-24 rounded-full bg-[#2F3046] mb-2 child'>
+              <div className='size-20 md:size-24 rounded-full bg-[#2F3046] mb-2 child'>
                 <img
                   className='w-full p-4'
                   src='./assets/tech/javascript.png'
@@ -235,7 +237,7 @@ const Skill = () => {
               <span className='text-center text-white'>JavaScript</span>
             </div>
             <div className='flex flex-col justify-center parent p-2'>
-              <div className='w-24 h-24 rounded-full bg-[#2F3046] mb-2 child'>
+              <div className='size-20 md:size-24 rounded-full bg-[#2F3046] mb-2 child'>
                 <img
                   className='w-full p-4'
                   src='./assets/tech/typescript.png'
@@ -245,7 +247,7 @@ const Skill = () => {
               <span className='text-center text-white'>TypeScript</span>
             </div>
             <div className='flex flex-col justify-center parent p-2'>
-              <div className='w-24 h-24 rounded-full bg-[#2F3046] mb-2 child'>
+              <div className='size-20 md:size-24 rounded-full bg-[#2F3046] mb-2 child'>
                 <img
                   className='w-full p-4 rotate'
                   src='./assets/tech/reactjs.png'
@@ -255,7 +257,7 @@ const Skill = () => {
               <span className='text-center text-white'>ReactJS</span>
             </div>
             <div className='flex flex-col justify-center parent p-2'>
-              <div className='w-24 h-24 rounded-full bg-[#2F3046] mb-2 child'>
+              <div className='size-20 md:size-24 rounded-full bg-[#2F3046] mb-2 child'>
                 <img
                   className='w-full p-4'
                   src='./assets/tech/nextjs.png'
@@ -265,7 +267,7 @@ const Skill = () => {
               <span className='text-center text-white'>NextJS</span>
             </div>
             <div className='flex flex-col justify-center parent p-2'>
-              <div className='w-24 h-24 rounded-full bg-[#2F3046] mb-2 child'>
+              <div className='size-20 md:size-24 rounded-full bg-[#2F3046] mb-2 child'>
                 <img
                   className='w-full p-4'
                   src='./assets/tech/redux.png'
@@ -275,7 +277,7 @@ const Skill = () => {
               <span className='text-center text-white'>Redux</span>
             </div>
             <div className='flex flex-col justify-center parent p-2'>
-              <div className='w-24 h-24 rounded-full bg-[#2F3046] mb-2 child'>
+              <div className='size-20 md:size-24 rounded-full bg-[#2F3046] mb-2 child'>
                 <img
                   className='w-full p-4'
                   src='./assets/tech/git.png'
@@ -285,7 +287,7 @@ const Skill = () => {
               <span className='text-center text-white'>Git & GitHub</span>
             </div>
             <div className='flex flex-col justify-center parent p-2'>
-              <div className='w-24 h-24 rounded-full bg-[#2F3046] mb-2 child'>
+              <div className='size-20 md:size-24 rounded-full bg-[#2F3046] mb-2 child'>
                 <img
                   className='w-full p-4'
                   src='./assets/tech/figma.png'
@@ -295,7 +297,7 @@ const Skill = () => {
               <span className='text-center text-white'>Figma</span>
             </div>
             <div className='flex flex-col justify-center parent p-2'>
-              <div className='w-24 h-24 rounded-full bg-[#2F3046] mb-2 child'>
+              <div className='size-20 md:size-24 rounded-full bg-[#2F3046] mb-2 child'>
                 <img
                   className='w-full p-4'
                   src='./assets/tech/tailwind.png'
@@ -305,7 +307,7 @@ const Skill = () => {
               <span className='text-center text-white'>TailwindCSS</span>
             </div>
             <div className='flex flex-col justify-center parent p-2'>
-              <div className='w-24 h-24 rounded-full bg-[#2F3046] mb-2 child'>
+              <div className='size-20 md:size-24 rounded-full bg-[#2F3046] mb-2 child'>
                 <img
                   className='w-full p-4'
                   src='./assets/tech/nodejs.png'
@@ -315,7 +317,7 @@ const Skill = () => {
               <span className='text-center text-white'>NodeJS</span>
             </div>
             <div className='flex flex-col justify-center parent p-2'>
-              <div className='w-24 h-24 rounded-full bg-[#2F3046] mb-2 child'>
+              <div className='size-20 md:size-24 rounded-full bg-[#2F3046] mb-2 child'>
                 <img
                   className='w-full p-4'
                   src='./assets/tech/express.png'
@@ -325,7 +327,7 @@ const Skill = () => {
               <span className='text-center text-white'>Expressjs</span>
             </div>
             <div className='flex flex-col justify-center parent p-2'>
-              <div className='w-24 h-24 rounded-full bg-[#2F3046] mb-2 child'>
+              <div className='size-20 md:size-24 rounded-full bg-[#2F3046] mb-2 child'>
                 <img
                   className='w-full p-4'
                   src='./assets/tech/mongodb.png'
@@ -335,7 +337,7 @@ const Skill = () => {
               <span className='text-center text-white'>MongoDB</span>
             </div>
             <div className='flex flex-col justify-center parent p-2'>
-              <div className='w-24 h-24 rounded-full bg-[#2F3046] mb-2 child'>
+              <div className='size-20 md:size-24 rounded-full bg-[#2F3046] mb-2 child'>
                 <img
                   className='w-full p-4 rounded-badge'
                   src='./assets/tech/mongoose.png'

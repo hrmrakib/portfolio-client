@@ -1,4 +1,18 @@
+import { useQuery } from "@tanstack/react-query";
+import useAxiosPublic from "../hooks/useAxiosPublic";
+import { Link } from "react-router-dom";
+
 const Blog = () => {
+  const axiosPublic = useAxiosPublic();
+
+  const { data: blogs = [] } = useQuery({
+    queryKey: ["blogs"],
+    queryFn: async () => {
+      const res = await axiosPublic.get("/blogs");
+      return res.data;
+    },
+  });
+
   return (
     <>
       <section id='blog' className='mb-24 bg-[#09101A] px-8 py-10 rounded-lg'>
@@ -11,75 +25,27 @@ const Blog = () => {
 
         {/* <!-- blog lists --> */}
         <div className='my-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16'>
-          <div className='blog'>
-            <div className='relative mb-3'>
-              <img
-                className='rounded w-full h-56'
-                src='./assets/computer.jpg'
-                alt=''
-              />
-              <p className='publish absolute top-5 right-4 text-white bg-emerald-600 px-2 py-1 rounded-lg'>
-                10 Jan
-              </p>
-            </div>
-            <p>
-              <i className='fa-solid fa-circle-user text-green-600 mr-1'></i> By
-              Admin
-            </p>
-            <h2 className='text-xl text-gray-200 my-2'>
-              Where Passion and Purpose Collide
-            </h2>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and types etting
-              in our company here thisn me [….]
-            </p>
-          </div>
-          <div className='blog'>
-            <div className='relative mb-3'>
-              <img
-                className='rounded w-full h-56'
-                src='./assets/occupation.jpg'
-                alt=''
-              />
-              <p className='publish absolute top-5 right-4 text-white bg-emerald-600 px-2 py-1 rounded-lg'>
-                10 Jan
-              </p>
-            </div>
-            <p>
-              <i className='fa-solid fa-circle-user text-green-600 mr-1'></i> By
-              Admin
-            </p>
-            <h2 className='text-xl text-gray-200 my-2'>
-              Where Passion and Purpose Collide
-            </h2>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and types etting
-              in our company here thisn me [….]
-            </p>
-          </div>
-          <div className='blog'>
-            <div className='relative mb-3'>
-              <img
-                className='rounded w-full h-56'
-                src='./assets/5C.jpg'
-                alt=''
-              />
-              <p className='publish absolute top-5 right-4 text-white bg-emerald-600 px-2 py-1 rounded-lg'>
-                10 Jan
-              </p>
-            </div>
-            <p>
-              <i className='fa-solid fa-circle-user text-green-600 mr-1'></i> By
-              Admin
-            </p>
-            <h2 className='text-xl text-gray-200 my-2'>
-              Where Passion and Purpose Collide
-            </h2>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and types etting
-              in our company here thisn me [….]
-            </p>
-          </div>
+          {blogs?.map((blog) => (
+            <Link to={`/blogDetail/${blog._id}`}>
+              <div className='blog'>
+                <div className='relative mb-3'>
+                  <img
+                    className='rounded w-full h-56'
+                    src={blog?.image}
+                    alt=''
+                  />
+                </div>
+                <p>
+                  <i className='fa-solid fa-circle-user text-green-600 mr-1'></i>{" "}
+                  By Admin
+                </p>
+                <h2 className='text-xl text-gray-200 my-2'>
+                  {blog?.headingTitle}
+                </h2>
+                <p>{blog?.summery.split(" ").slice(0, 13).join(" ")} [...]</p>
+              </div>
+            </Link>
+          ))}
         </div>
       </section>
     </>
