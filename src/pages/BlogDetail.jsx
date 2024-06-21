@@ -15,7 +15,7 @@ const BlogDetail = () => {
 
         <ul className='py-7'>
           {blog?.points?.map((point, i) => (
-            <ol key={point.id} type='1' className='mb-8'>
+            <ol key={point._id} type='1' className='mb-8'>
               <h2 className='text-lg text-gray-300 font-semibold'>
                 {i + 1}. {point?.title}:
               </h2>

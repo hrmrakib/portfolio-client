@@ -76,6 +76,7 @@ const Portfolio = () => {
                     href={project?.githubLink}
                     aria-label='Spotify'
                     data-link='code'
+                    target='_blank'
                   >
                     <div className='filled'></div>
                     <FaGithub className='text-2xl text-black z-50 icon' />
