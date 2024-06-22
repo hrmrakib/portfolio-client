@@ -20,8 +20,8 @@ const router = createBrowserRouter([
   {
     path: "/blogDetail/:id",
     element: <BlogDetail />,
-    errorElement: <ErrorPage />,
     loader: async ({ params }) => await fetch(`${baseURL}/blog/${params.id}`),
+    errorElement: <ErrorPage />,
   },
   {
     path: "/dashboard",

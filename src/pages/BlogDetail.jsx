@@ -1,9 +1,29 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import { IoHomeOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { useQuery } from "@tanstack/react-query";
+import useAxiosPublic from "../hooks/useAxiosPublic";
 
 const BlogDetail = () => {
-  const blog = useLoaderData();
+  // const blog = useLoaderData();
+  let { id } = useParams();
+  const axiosPublic = useAxiosPublic();
+
+  const { data: blog = {}, isLoading } = useQuery({
+    queryKey: ["blog"],
+    queryFn: async () => {
+      const res = await axiosPublic.get(`/blog/${id}`);
+      return res.data;
+    },
+  });
+
+  if (isLoading) {
+    return (
+      <div className='w-full bg-[#09101A] h-screen flex justify-center items-center'>
+        <span className='loading loading-spinner loading-lg text-primary'></span>
+      </div>
+    );
+  }
 
   return (
     <div className='relative bg-[#09101A] min-h-screen'>
