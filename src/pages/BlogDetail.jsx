@@ -1,13 +1,8 @@
 import { useLoaderData } from "react-router-dom";
-import { IoHomeOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 const BlogDetail = () => {
   const blog = useLoaderData();
-
-  if (!blog) {
-    return <span className='loading loading-spinner text-primary'></span>;
-  }
 
   return (
     <div className='relative bg-[#09101A] min-h-screen'>
