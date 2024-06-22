@@ -1,17 +1,30 @@
 import { useLoaderData } from "react-router-dom";
+import { IoHomeOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const BlogDetail = () => {
   const blog = useLoaderData();
 
+  if (!blog) {
+    return <span className='loading loading-spinner text-primary'></span>;
+  }
+
   return (
-    <div className='bg-[#09101A] min-h-screen'>
+    <div className='relative bg-[#09101A] min-h-screen'>
+      <Link
+        to='/'
+        className='absolute left-3 top-2 border border-pink-400 rounded-full p-2'
+        title='Go to Home'
+      >
+        <IoHomeOutline className='text-2xl text-purple-600' />
+      </Link>
       <div className='w-[70%] mx-auto pt-20'>
         <img className='rounded w-full h-96' src={blog?.image} alt='' />
 
         {/* title */}
         <h2 className='text-4xl text-gray-200 my-5'>{blog?.headingTitle}</h2>
 
-        <p className='text-xl text-gray-300 my-5'>{blog?.summery}</p>
+        <p className='text-xl text-gray-300 my-5'>{blog?.summery}:</p>
 
         <ul className='py-7'>
           {blog?.points?.map((point, i) => (
