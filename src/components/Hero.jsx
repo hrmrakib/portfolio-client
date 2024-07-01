@@ -13,7 +13,7 @@ const Hero = () => {
         <div className='layer grid grid-cols-1 lg:grid-cols-3 justify-center items-center p-4 lg:p-20'>
           <div className='hero_left col-span-2'>
             <h2 className='text-2xl md:text-4xl lg:text-6xl lg:pt-8 text-white font-extrabold lg:leading-tight'>
-              HI, I'M Rakib!
+              HI, I'M Rakibul!
               <br />
               CREATIVE
             </h2>

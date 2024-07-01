@@ -1,9 +1,9 @@
 const handleDownload = () => {
-  const pdfUrl = "frontend-react-developer-rakibul.pdf";
+  const pdfUrl = "Rakibul_Alam_Frontend_Engineer_Resume_2024.pdf";
 
   const link = document.createElement("a");
   link.href = pdfUrl;
-  link.setAttribute("download", "frontend-developer-rakibul.pdf"); // Set the file name
+  link.setAttribute("download", "Rakibul_Alam_Frontend_Engineer_Resume_2024"); // Set the file name
 
   document.body.appendChild(link);
   link.click();

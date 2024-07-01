@@ -5,7 +5,6 @@ import { useQuery } from "@tanstack/react-query";
 import useAxiosPublic from "../hooks/useAxiosPublic";
 
 const BlogDetail = () => {
-  // const blog = useLoaderData();
   let { id } = useParams();
   const axiosPublic = useAxiosPublic();
 
