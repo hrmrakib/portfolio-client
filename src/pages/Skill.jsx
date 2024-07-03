@@ -28,8 +28,8 @@ const Skill = () => {
         <button
           onClick={handleDownload}
           type='button'
-          className='text-white flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-[18px] px-5 py-2.5 text-center me-2 mb-2'
-          // className='flex items-center gap-1 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-lg px-5 py-2 text-center'
+          className='text-white flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-[18px] px-5 py-2.5 text-center me-2 mb-2'
+          // className='text-white flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-[18px] px-5 py-2.5 text-center me-2 mb-2'
         >
           <span>Download CV</span> <MdCloudDownload className='text-xl' />
         </button>
@@ -38,8 +38,10 @@ const Skill = () => {
           onClick={() => handleSkill("technologies")}
           type='button'
           className={`text-white ${
-            tract === "technologies" ? "bg-green-500" : "bg-gray-800"
-          } hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg  dark:shadow-lg  font-medium rounded-lg text-[18px] px-5 py-2.5 text-center me-2 mb-2`}
+            tract === "technologies"
+              ? "bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700"
+              : "bg-gray-800"
+          } hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg  dark:shadow-lg  font-medium rounded-lg text-[18px] px-5 py-2.5 text-center me-2 mb-2`}
         >
           Technologies
         </button>
@@ -48,8 +50,10 @@ const Skill = () => {
           onClick={() => handleSkill("education")}
           type='button'
           className={`text-white ${
-            tract === "education" ? "bg-green-500" : "bg-gray-800"
-          } hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg  dark:shadow-lg  font-medium rounded-lg text-[18px] px-5 py-2.5 text-center me-2 mb-2`}
+            tract === "education"
+              ? "bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700"
+              : "bg-gray-800"
+          } hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg  dark:shadow-lg  font-medium rounded-lg text-[18px] px-5 py-2.5 text-center me-2 mb-2`}
         >
           Education
         </button>
@@ -57,8 +61,10 @@ const Skill = () => {
           onClick={() => handleSkill("biography")}
           type='button'
           className={`text-white ${
-            tract === "biography" ? "bg-green-500" : "bg-gray-800"
-          } hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg  dark:shadow-lg  font-medium rounded-lg text-[18px] px-5 py-2.5 text-center me-2 mb-2`}
+            tract === "biography"
+              ? "bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700"
+              : "bg-gray-800"
+          } hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg  dark:shadow-lg  font-medium rounded-lg text-[18px] px-5 py-2.5 text-center me-2 mb-2`}
         >
           Biography
         </button>

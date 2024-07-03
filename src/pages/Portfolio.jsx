@@ -35,13 +35,14 @@ const Portfolio = () => {
 
       <div className='my-14'>
         <ul className='flex items-center flex-wrap justify-center gap-3 *:bg-white *:px-4 *:py-2 *:text-gray-800 *:rounded-lg'>
-          <li>React</li>
-          <li>Next</li>
-          <li>MERN</li>
-          <li className='!bg-blue-600 !text-white'>All</li>
+          <li className='cursor-not-allowed'>React</li>
+          <li className='cursor-not-allowed'>Next</li>
+          <li className='cursor-pointer'>MERN</li>
+          <li className='!bg-blue-600 !text-white cursor-pointer'>All</li>
         </ul>
       </div>
-      <div className='mt-12 grid justify-center  md:grid-cols-2 lg:grid-cols-3 gap-12'>
+
+      <div className='mt-12 grid justify-center md:grid-cols-2 lg:grid-cols-3 gap-12'>
         {projects.map((project) => (
           <div
             key={project._id}
