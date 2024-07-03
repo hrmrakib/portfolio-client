@@ -242,16 +242,7 @@ const Skill = () => {
               </div>
               <span className='text-center text-white'>JavaScript</span>
             </div>
-            <div className='flex flex-col justify-center parent p-2'>
-              <div className='size-20 md:size-24 rounded-full bg-[#2F3046] mb-2 child'>
-                <img
-                  className='w-full p-4'
-                  src='./assets/tech/typescript.png'
-                  alt=''
-                />
-              </div>
-              <span className='text-center text-white'>TypeScript</span>
-            </div>
+
             <div className='flex flex-col justify-center parent p-2'>
               <div className='size-20 md:size-24 rounded-full bg-[#2F3046] mb-2 child'>
                 <img
@@ -276,11 +267,21 @@ const Skill = () => {
               <div className='size-20 md:size-24 rounded-full bg-[#2F3046] mb-2 child'>
                 <img
                   className='w-full p-4'
-                  src='./assets/tech/redux.png'
+                  src='./assets/tech/typescript.png'
                   alt=''
                 />
               </div>
-              <span className='text-center text-white'>Redux</span>
+              <span className='text-center text-white'>TypeScript</span>
+            </div>
+            <div className='flex flex-col justify-center parent p-2'>
+              <div className='size-20 md:size-24 rounded-full bg-[#2F3046] mb-2 child'>
+                <img
+                  className='w-full p-4'
+                  src='./assets/tech/firebase.webp'
+                  alt=''
+                />
+              </div>
+              <span className='text-center text-white'>Firebase</span>
             </div>
             <div className='flex flex-col justify-center parent p-2'>
               <div className='size-20 md:size-24 rounded-full bg-[#2F3046] mb-2 child'>
