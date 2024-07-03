@@ -46,7 +46,7 @@ const Portfolio = () => {
         {projects.map((project) => (
           <div
             key={project._id}
-            className='card max-w-80 bg-white p-4 rounded-xl'
+            className='card max-w-80 bg-white p-5 rounded-xl'
           >
             <div className='relative'>
               <img
@@ -89,7 +89,9 @@ const Portfolio = () => {
             <h3 className='text-2xl text-black font-semibold mb-2'>
               {project?.name}
             </h3>
-            <p className='desc pb-2'>{project?.shortDescription}</p>
+            <p className='desc pb-2 text-gray-700'>
+              {project?.shortDescription}
+            </p>
           </div>
         ))}
       </div>
