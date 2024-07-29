@@ -34,7 +34,7 @@ const Navbar = () => {
               </span>
             </Link>
 
-            <ul className='font-medium grid gap-4 lg:gap-8 h-max side_navbar'>
+            <ul className='font-medium flex flex-col justify-between gap-4 lg:gap-8 h-max side_navbar'>
               <li>
                 <HashLink
                   smooth

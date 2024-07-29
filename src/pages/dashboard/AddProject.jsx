@@ -114,6 +114,7 @@ const AddProject = () => {
             className='p-2 border border-gray-300 rounded'
           >
             <option value=''>All Tags</option>
+            <option value=''>html-css-js</option>
             <option value='React'>React</option>
             <option value='Nextjs'>Nextjs</option>
             <option value='MERN'>MERN</option>
@@ -179,7 +180,7 @@ const AddProject = () => {
             type='submit'
             className='w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-200'
           >
-            Add Pet
+            Add Project
           </button>
         </div>
       </form>

@@ -2,9 +2,11 @@ import { FaEye } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { useQuery } from "@tanstack/react-query";
 import useAxiosSecure from "../hooks/useAxiosSecure";
+import { useEffect, useState } from "react";
 
 const Portfolio = () => {
   const axiosSecure = useAxiosSecure();
+  const [projectLength, setProjectLength] = useState(3);
 
   const {
     data: projects = [],
@@ -21,6 +23,11 @@ const Portfolio = () => {
   if (isFetching) {
     return <span>Loading ....</span>;
   }
+  const handleShowMore = () => {
+    return setProjectLength((prev) => prev + 3);
+  };
+
+  console.log(projectLength);
 
   return (
     <section id='portfolio' className='my-12 lg:my-32'>
@@ -43,18 +50,18 @@ const Portfolio = () => {
       </div>
 
       <div className='mt-12 grid justify-center md:grid-cols-2 lg:grid-cols-3 gap-12'>
-        {projects.map((project) => (
+        {projects.slice(0, projectLength).map((project) => (
           <div
             key={project._id}
-            className='card max-w-80 bg-white p-5 rounded-xl'
+            className='card max-w-80 bg-[#fefefcfa] p-5 rounded-xl'
           >
             <div className='relative'>
               <img
                 className='w-full h-48 rounded-lg'
                 src={project?.image}
-                alt=''
+                alt={project?.name + " - image"}
               />
-              <span className='relative bottom-5 left-6 px-4 pt-2 pb-4 bg-white text-gray-600 text-sm font-normal rounded-t-xl'>
+              <span className='relative bottom-5 left-6 px-3 py-2 bg-[#fefefcfa] text-gray-600 text-sm font-normal rounded-t-xl'>
                 {project?.tags}
               </span>
 
@@ -95,6 +102,18 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
+
+      {projects.length >= projectLength ? (
+        <div className='mt-10 flex justify-center items-center'>
+          <button
+            onClick={handleShowMore}
+            type='button'
+            className='text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2'
+          >
+            Show More
+          </button>
+        </div>
+      ) : null}
     </section>
   );
 };
