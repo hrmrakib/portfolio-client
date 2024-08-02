@@ -11,6 +11,7 @@ const Footer = () => {
         <div className='live-link flex justify-center gap-3 *:text-xl *:border-none'>
           <a
             className='social'
+            target='_blank'
             href='https://www.linkedin.com/in/hrmrakib/'
             data-link='linkedin'
           >
@@ -19,6 +20,7 @@ const Footer = () => {
           </a>
           <a
             className='social'
+            target='_blank'
             href='https://www.facebook.com/hrmrakib'
             data-link='facebook'
           >
@@ -27,6 +29,7 @@ const Footer = () => {
           </a>
           <a
             className='social'
+            target='_blank'
             href='https://github.com/hrmrakib'
             data-link='github'
           >
