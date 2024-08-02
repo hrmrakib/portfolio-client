@@ -32,7 +32,7 @@ const Root = () => {
       <Home />
       <main className='relative lg:ml-64 bg-[#02050A] text-[#a2a2a2]'>
         <Hero />
-        <div className='absolute top-2 right-2 lg:right-4'>
+        {/* <div className='absolute top-2 right-2 lg:right-4'>
           {user ? (
             <div className='flex items-center gap-4'>
               <div className='dropdown dropdown-end'>
@@ -66,7 +66,7 @@ const Root = () => {
               />
             </Link>
           )}
-        </div>
+        </div> */}
         <div className='p-4 lg:px-12'>
           <About />
           <Service />
