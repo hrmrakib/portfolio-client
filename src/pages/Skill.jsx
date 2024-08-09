@@ -154,7 +154,7 @@ const Skill = () => {
           <div className='flex flex-col md:flex-row items-center'>
             <div className='md:w-1/3 w-full flex justify-center md:justify-start mb-6 md:mb-0'>
               <img
-                src='/rakib.png'
+                src='/assets/rakib.png'
                 alt='Profile'
                 className='rounded-full size-36 md:size-48 object-cover profile'
               />
